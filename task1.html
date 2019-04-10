@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task1</title>
+	<script src="Vec3.js"></script>
+    <script>
+    	function myfunction(){
+    		var a1 =parseInt(document.getElementById("number1").value);
+    		var a2 =parseInt(document.getElementById("number2").value);
+    		var a3 =parseInt(document.getElementById("number3").value);
+    		var a = new Vec3(a1, a2, a3);
+    		var min = a.min();
+    		var max = a.max();
+    		var mid = a.mid();
+    	window.alert("the biggist number is" + "  "+max);
+    	window.alert("the middle number is" + "  "+mid);
+    	window.alert("the smallest number is" + "  "+min);
+
+
+
+    	}
+    	
+
+    </script>
+</head>
+<body>
+	<form method="post">
+	please input first number:<br>
+	<input type="number" id="number1" >
+	<br>
+    please input second number:<br>
+    <input type="number" id="number2" >
+    <br>
+    please input third number:<br>
+    <input type="number" id="number3" >
+    <br><br>
+    <input type="button" onclick="myfunction()" value="Submit">
+	</form>
+    
+</body>
+</html>
